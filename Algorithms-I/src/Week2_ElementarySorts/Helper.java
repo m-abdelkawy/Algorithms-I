@@ -77,7 +77,7 @@ public class Helper {
 
 	public static void TestClientShellSort() {
 		StdOut.println("-------------------------------------------------------");
-		StdOut.println("   Shell Sort Test Client (Generic Version):");
+		StdOut.println("   Shell Sort Test Client (Generic Version):   ");
 		StdOut.println("-------------------------------------------------------");
 		StdOut.print("Enter size of the Array: ");
 		int size = StdIn.readInt();
@@ -95,6 +95,33 @@ public class Helper {
 
 		StdOut.println("During Sorting: ");
 		Shell.sort(arr);
+		StdOut.println();
+
+		StdOut.println("After Sorting: ");
+		Helper.display(arr);
+		StdOut.println();
+	}
+
+	public static void TestClientShuffling() {
+		StdOut.println("-------------------------------------------------------");
+		StdOut.println("   Shuffling Test Client (Generic Version):   ");
+		StdOut.println("-------------------------------------------------------");
+		StdOut.print("Enter size of the Array: ");
+		int size = StdIn.readInt();
+
+		Integer[] arr = new Integer[size];
+
+		for (int i = 0; i < size; i++) {
+			StdOut.print("Enter Element No." + (i + 1) + ": ");
+			arr[i] = StdIn.readInt();
+		}
+
+		StdOut.println("Before Sorting: ");
+		Helper.display(arr);
+		StdOut.println();
+
+		StdOut.println("During Sorting: ");
+		Shuffling.shuffle(arr);
 		StdOut.println();
 
 		StdOut.println("After Sorting: ");

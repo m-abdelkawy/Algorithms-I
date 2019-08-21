@@ -9,7 +9,7 @@ public class Program {
 	public static void main(String[] args) {
 //		int n = Integer.parseInt(args[0]);
 		
-		Helper.TestClientShellSort();
+		Helper.TestClientShuffling();
 	}
 
 }
