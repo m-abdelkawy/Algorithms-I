@@ -52,6 +52,12 @@ public class StackArray<T> implements Iterable<T>{
 			resizeArray(s.length / 2);
 		return item;
 	}
+	
+	public T peek() {
+		T item = s[N-1];
+		
+		return item;
+	}
 
 	private void resizeArray(int capacity) {
 		T[] temp = (T[])new Object[capacity];
